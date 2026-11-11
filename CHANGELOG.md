@@ -8,18 +8,14 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ### Agregado
 - Establecimiento de la línea base inicial del Sistema Integral de Gestión de Restaurante (SIGR — "El Gourmet").
-- Módulos operativos frontend en HTML5, CSS3 y JavaScript ES6+ vanilla:
-  - **Pedidos:** gestión de órdenes con carrito de compras y estadísticas.
-  - **Reservas:** control de mesas y estados (confirmada, pendiente, cancelada).
-  - **Menú Digital:** CRUD completo de platillos por categorías, precios y disponibilidad.
-  - **Usuarios:** administración de empleados con roles (admin, mesero, cocinero).
-  - **Clientes:** registro, filtros de búsqueda en tiempo real y paginación.
-  - **Facturación:** generación de facturas con cálculo automático de IVA.
-  - **Reportes:** visualización de métricas de ventas, clientes frecuentes y reservas.
-- Capacidades transversales: diseño responsivo, validaciones de formulario, notificaciones toast y soporte de persistencia en `localStorage`.
+- Interfaz frontend en HTML5, CSS3 y JavaScript ES6+ vanilla con navegación entre los 7 módulos operativos: Pedidos, Reservas, Menú Digital, Usuarios, Clientes, Facturación y Reportes.
+- Diseño responsivo para escritorio (`1440x900`) y dispositivos móviles (`390x844`).
 - Documentación de gestión de configuración: `CHANGELOG.md` y `LICENSE.txt`.
 
+### Errores Conocidos (GitHub Issues)
+- **Issue #4:** `fix: corregir ReferenceError renderPedidos en js/script.js línea 149` — excepción en tiempo de ejecución en la línea base original del docente que bloquea la precarga inicial de datos en `localStorage` y el renderizado de registros de prueba.
+
 ### Pendiente / Planificado (GitHub Issues)
-- **Issue #1:** Corrección tipográfica en la sección de licencia de `README.md`.
-- **Issue #2:** Implementación de módulo de inicio de sesión asociado a los roles del sistema.
-- **Issue #3:** Migración de persistencia hacia API REST / base de datos e integración de cierre de caja.
+- **Issue #1:** `docs: Corregir error tipográfico en la sección de licencia del README`.
+- **Issue #2:** `feat: Implementar inicio de sesión con control de roles (admin, mesero, cocinero)`.
+- **Issue #3:** `feat: Migrar persistencia a API REST e integrar módulo de cierre de caja`.
